@@ -6,9 +6,13 @@ const Header = () => {
             <div className="container mx-auto px-4 h-16 flex items-center justify-between">
                 {/* Logo Placeholder */}
                 <div className="flex items-center gap-2">
-                    <div className="bg-brand-blue text-white font-bold text-xl px-2 py-1 rounded-sm tracking-tighter">
-                        8SR
-                    </div>
+                    <img
+                        src="/assets/imgs/logo/logo-fundo-transparente.webp"
+                        alt="8SR Logo"
+                        width="144"
+                        height="48"
+                        className="h-12 w-auto object-contain"
+                    />
                     <span className="text-gray-600 text-sm font-medium hidden sm:block border-l pl-2 ml-2 border-gray-300">
                         Gestão & Valor em Saúde
                     </span>

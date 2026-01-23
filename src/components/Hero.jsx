@@ -9,6 +9,9 @@ const Hero = () => {
                 <img
                     src="/assets/hero-bg.webp"
                     alt="Abstract Medical Background"
+                    width="1024"
+                    height="1024"
+                    fetchPriority="high"
                     className="w-full h-full object-cover opacity-30"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-white via-white/30 to-transparent"></div>

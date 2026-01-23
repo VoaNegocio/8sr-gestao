@@ -13,6 +13,14 @@ const Footer = () => {
                 </div>
 
                 <div className="border-t border-gray-300 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+                    <img
+                        src="/assets/imgs/logo/logo-fundo-transparente.webp"
+                        alt="8SR Logo"
+                        width="96"
+                        height="32"
+                        loading="lazy"
+                        className="h-8 w-auto grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100"
+                    />
                     <p>&copy; {new Date().getFullYear()} 8SR - Gestão & Valor em Saúde.</p>
                     <p>Política de Privacidade</p>
                 </div>
