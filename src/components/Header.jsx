@@ -13,9 +13,7 @@ const Header = () => {
                         height="48"
                         className="h-12 w-auto object-contain"
                     />
-                    <span className="text-gray-600 text-sm font-medium hidden sm:block border-l pl-2 ml-2 border-gray-300">
-                        Gestão & Valor em Saúde
-                    </span>
+
                 </div>
 
                 {/* Desktop Nav - Empty for now as per LP request (focus on conversion) */}
