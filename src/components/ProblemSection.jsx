@@ -1,5 +1,6 @@
 import { AlertTriangle, TrendingDown, RefreshCcw } from 'lucide-react';
 
+
 const ProblemSection = () => {
     return (
         <section className="py-20 bg-gradient-to-b from-brand-surface/50 to-white">
@@ -46,9 +47,21 @@ const ProblemSection = () => {
                         </div>
                     </div>
 
-                    <p className="text-center text-gray-600 mt-10 italic">
+                    <p className="text-center text-gray-600 mt-10 mb-8 italic">
                         "Esses cursos foram criados para quem já está no jogo e precisa agir com mais critério."
                     </p>
+
+                    <div className="text-center">
+                        <a
+                            href="#oferta"
+                            className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all bg-brand-blue rounded-xl shadow-[0_6px_0_0_#00095c] hover:shadow-[0_3px_0_0_#00095c] hover:translate-y-[3px] active:shadow-none active:translate-y-[6px] overflow-hidden"
+                        >
+                            <span className="relative z-10 flex items-center gap-2">
+                                Ver Soluções Práticas
+                            </span>
+                            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full animate-shimmer z-0"></div>
+                        </a>
+                    </div>
 
                 </div>
             </div>
