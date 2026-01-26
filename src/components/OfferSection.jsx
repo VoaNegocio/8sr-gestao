@@ -1,4 +1,5 @@
 import { MessageCircle } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const OfferSection = () => {
     return (
@@ -24,10 +25,8 @@ const OfferSection = () => {
                             </div>
                         </div>
 
-                        <a
-                            href="https://wa.me/5541999999999?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20cursos%208SR" // Replace number later
-                            target="_blank"
-                            rel="noopener noreferrer"
+                        <Link
+                            to="/obrigado"
                             className="inline-flex items-center gap-3 bg-green-500 text-white font-bold py-4 px-8 rounded-xl text-lg transition-all shadow-[0_6px_0_0_#14532d] hover:shadow-[0_3px_0_0_#14532d] hover:translate-y-[3px] hover:bg-green-600 active:shadow-none active:translate-y-[6px] relative overflow-hidden group"
                         >
                             <span className="relative z-10 flex items-center gap-3">
@@ -35,7 +34,7 @@ const OfferSection = () => {
                                 Falar com a equipe no WhatsApp
                             </span>
                             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full animate-shimmer z-0"></div>
-                        </a>
+                        </Link>
 
                         <div className="mt-8 grid md:grid-cols-3 gap-4 text-sm text-blue-200 opacity-80 max-w-2xl mx-auto">
                             <div className="flex items-center justify-center gap-2">✓ Confirme sua vaga</div>
