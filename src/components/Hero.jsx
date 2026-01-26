@@ -37,8 +37,8 @@ const Hero = () => {
 
                     {/* Subheadline */}
                     <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-                        Se resolve com método, dados e decisão prática.<br className="hidden md:block" />
-                        Cursos online e ao vivo para profissionais que precisam organizar processos e reduzir desperdícios.
+                        Se resolve com método, dados e decisão prática. <br />
+                        <span className="font-bold text-gray-800">Aprenda com quem atua na prática: Professores que são Profissionais da Saúde atuantes</span>
                     </p>
 
                     {/* CTAs */}
@@ -50,8 +50,8 @@ const Hero = () => {
                             </span>
                             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full animate-shimmer z-0"></div>
                         </a>
-                        <span className="text-sm text-gray-500 mt-2 sm:mt-0">
-                            Aplicação real no dia a dia
+                        <span className="text-sm text-gray-500 mt-4 sm:mt-0 max-w-xs text-center sm:text-left">
+                            Cursos online e ao vivo para profissionais que precisam organizar processos e reduzir desperdícios.
                         </span>
                     </div>
 
