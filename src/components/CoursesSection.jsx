@@ -1,6 +1,6 @@
 import { Calendar, CheckCircle2, DollarSign, LayoutList } from 'lucide-react';
 
-const CourseCard = ({ title, description, benefits, dates, badge, icon: Icon, color, ctaText }) => (
+const CourseCard = ({ title, description, benefits, dates, badge, icon: Icon, color, ctaText, whatsappMessage }) => (
     <div className="bg-white rounded-2xl p-8 border-t-8 border-t-brand-blue border-x-2 border-b-2 border-gray-100 shadow-[0_8px_0_0_#e5e7eb] relative overflow-hidden flex flex-col h-full">
         <div className="mb-6">
             <div className="inline-flex items-center gap-2 bg-gray-100 text-gray-700 px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider mb-4">
@@ -32,7 +32,19 @@ const CourseCard = ({ title, description, benefits, dates, badge, icon: Icon, co
                 <Calendar size={18} className="text-brand-blue" />
                 <span>Aulas ao vivo: {dates}</span>
             </div>
-            <a href="#oferta" className="block w-full text-center bg-brand-blue text-white font-bold py-3 rounded-xl transition-all shadow-[0_6px_0_0_#00095c] hover:shadow-[0_3px_0_0_#00095c] hover:translate-y-[3px] active:shadow-none active:translate-y-[6px] relative overflow-hidden group">
+            <a
+                href={`https://api.whatsapp.com/send?phone=5519996671304&text=${encodeURIComponent(whatsappMessage)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => {
+                    const pixelFired = sessionStorage.getItem('pixel_fired');
+                    if (!pixelFired) {
+                        console.log("🔥 Pixel Fired: Lead Converted");
+                        sessionStorage.setItem('pixel_fired', 'true');
+                    }
+                }}
+                className="block w-full text-center bg-brand-blue text-white font-bold py-3 rounded-xl transition-all shadow-[0_6px_0_0_#00095c] hover:shadow-[0_3px_0_0_#00095c] hover:translate-y-[3px] active:shadow-none active:translate-y-[6px] relative overflow-hidden group"
+            >
                 <span className="relative z-10">{ctaText}</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full animate-shimmer z-0"></div>
             </a>
@@ -66,6 +78,7 @@ const CoursesSection = () => {
                         color="border-t-brand-blue"
                         dates="03/03, 10/03, 17/03"
                         ctaText="Quero otimizar custos"
+                        whatsappMessage="Olá, vim pelo Instagram e quero informações do Curso Gestão de Custos"
                         benefits={[
                             "Analisar custos por paciente-dia",
                             "Identificar variações e desperdícios",
@@ -82,6 +95,7 @@ const CoursesSection = () => {
                         color="border-t-brand-green"
                         dates="25/02, 04/03, 11/03"
                         ctaText="Quero organizar processos"
+                        whatsappMessage="Olá, vim pelo Instagram e quero informações do Curso SIPOC"
                         benefits={[
                             "Mapear processos críticos com clareza",
                             "Identificar gargalos, falhas e desperdícios",

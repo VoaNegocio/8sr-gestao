@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
 
 import { Routes, Route } from 'react-router-dom';
-import ThankYouPage from './components/ThankYouPage';
+
 
 const LandingPage = () => (
   <>
@@ -30,7 +30,7 @@ function App() {
     <div className="font-sans text-gray-900 bg-white selection:bg-brand-blue selection:text-white">
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/obrigado" element={<ThankYouPage />} />
+
         {/* Redirect unknown routes to Home */}
         <Route path="*" element={<LandingPage />} />
       </Routes>

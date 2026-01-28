@@ -1,5 +1,5 @@
 import { MessageCircle } from 'lucide-react';
-import { Link } from 'react-router-dom';
+
 
 const OfferSection = () => {
     return (
@@ -25,8 +25,17 @@ const OfferSection = () => {
                             </div>
                         </div>
 
-                        <Link
-                            to="/obrigado"
+                        <a
+                            href={`https://api.whatsapp.com/send?phone=5519996671304&text=${encodeURIComponent("Olá! Me cadastrei no site e gostaria de saber mais sobre os cursos 8SR.")}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={() => {
+                                const pixelFired = sessionStorage.getItem('pixel_fired');
+                                if (!pixelFired) {
+                                    console.log("🔥 Pixel Fired: Lead Converted");
+                                    sessionStorage.setItem('pixel_fired', 'true');
+                                }
+                            }}
                             className="inline-flex items-center gap-3 bg-green-500 text-white font-bold py-4 px-8 rounded-xl text-lg transition-all shadow-[0_6px_0_0_#14532d] hover:shadow-[0_3px_0_0_#14532d] hover:translate-y-[3px] hover:bg-green-600 active:shadow-none active:translate-y-[6px] relative overflow-hidden group"
                         >
                             <span className="relative z-10 flex items-center gap-3">
@@ -34,7 +43,7 @@ const OfferSection = () => {
                                 Falar com a equipe no WhatsApp
                             </span>
                             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full animate-shimmer z-0"></div>
-                        </Link>
+                        </a>
 
                         <div className="mt-8 grid md:grid-cols-3 gap-4 text-sm text-blue-200 opacity-80 max-w-2xl mx-auto">
                             <div className="flex items-center justify-center gap-2">✓ Confirme sua vaga</div>
