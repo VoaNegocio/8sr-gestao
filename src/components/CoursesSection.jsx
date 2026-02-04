@@ -33,7 +33,7 @@ const CourseCard = ({ title, description, benefits, dates, badge, icon: Icon, co
                 <span>Aulas ao vivo: {dates}</span>
             </div>
             <a
-                href={`https://api.whatsapp.com/send?phone=5519996671304&text=${encodeURIComponent(whatsappMessage)}`}
+                href={`https://api.whatsapp.com/send?phone=5516992206074&text=${encodeURIComponent(whatsappMessage)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => {
@@ -60,10 +60,10 @@ const CoursesSection = () => {
                 {/* Section Intro */}
                 <div className="max-w-4xl mx-auto text-center mb-16">
                     <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                        Uma capacitação. Dois problemas resolvidos.
+                        Duas capacitações. Dois problemas resolvidos.
                     </h2>
                     <p className="text-xl text-gray-600">
-                        Você pode escolher onde agir primeiro, conforme a realidade da sua instituição.
+                        Faça as duas ou escolha a que mais atende a sua realidade.
                     </p>
                 </div>
 
@@ -78,7 +78,7 @@ const CoursesSection = () => {
                         color="border-t-brand-blue"
                         dates="03/03, 10/03, 17/03"
                         ctaText="Quero otimizar custos"
-                        whatsappMessage="Olá, vim pelo Instagram e quero informações do Curso Gestão de Custos"
+                        whatsappMessage="Olá quero informações sobre o curso de Gestão de Custos em UTI"
                         benefits={[
                             "Analisar custos por paciente-dia",
                             "Identificar variações e desperdícios",
@@ -95,7 +95,7 @@ const CoursesSection = () => {
                         color="border-t-brand-green"
                         dates="25/02, 04/03, 11/03"
                         ctaText="Quero organizar processos"
-                        whatsappMessage="Olá, vim pelo Instagram e quero informações do Curso SIPOC"
+                        whatsappMessage="Olá quero informações sobre o curso Sipoc"
                         benefits={[
                             "Mapear processos críticos com clareza",
                             "Identificar gargalos, falhas e desperdícios",

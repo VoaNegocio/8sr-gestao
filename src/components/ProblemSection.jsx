@@ -9,7 +9,7 @@ const ProblemSection = () => {
 
                     <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
                         O problema não é falta de esforço.<br />
-                        <span className="text-brand-blue">É falta de método simples para decidir melhor.</span>
+                        <span className="text-brand-blue">É falta de método simples para tomar a melhor decisão.</span>
                     </h2>
 
                     <div className="space-y-6">
@@ -19,8 +19,8 @@ const ProblemSection = () => {
                                 <TrendingDown className="text-red-600" size={24} />
                             </div>
                             <div>
-                                <h3 className="font-bold text-gray-900 text-lg mb-1">Custos que crescem sem clareza</h3>
-                                <p className="text-gray-600">Você vê o orçamento estourar, mas não sabe exatamente onde cortar sem afetar a segurança.</p>
+                                <h3 className="font-bold text-gray-900 text-lg mb-1">Os gastos sobem sem clareza</h3>
+                                <p className="text-gray-600">Você vê os custos aumentarem, mas não sabe exatamente onde cortar sem comprometer a segurança do paciente.</p>
                             </div>
                         </div>
 

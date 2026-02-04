@@ -37,8 +37,8 @@ const Hero = () => {
 
                     {/* Subheadline */}
                     <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-                        Se resolve com método, dados e decisão prática. <br />
-                        <span className="font-bold text-gray-800">Aprenda com quem atua na prática: Professores que são Profissionais da Saúde atuantes</span>
+                        Se resolve com método, dados e decisão. <br />
+                        <span className="font-bold text-gray-800">Aprenda com  Professores que conhecem a Realidade na Prática</span>
                     </p>
 
                     {/* CTAs */}
