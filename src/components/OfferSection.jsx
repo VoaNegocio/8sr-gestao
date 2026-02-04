@@ -29,7 +29,7 @@ const OfferSection = () => {
                         </div>
 
                         <a
-                            href={`https://api.whatsapp.com/send?phone=5516992206074&text=${encodeURIComponent("Olá quero informações sobre os cursos disponíveis")}`}
+                            href={`https://wa.me/5516992206074?text=${encodeURIComponent("Olá quero informações sobre os cursos disponíveis")}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={() => {
