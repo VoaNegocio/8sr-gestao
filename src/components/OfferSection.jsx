@@ -21,7 +21,10 @@ const OfferSection = () => {
                         <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-10">
                             <div className="text-center">
                                 <span className="block text-sm text-blue-200 uppercase tracking-widest mb-1">Investimento por curso</span>
-                                <span className="block text-5xl font-bold">R$ 199,00</span>
+                                <span className="block text-5xl font-bold">
+                                    <span className="text-2xl text-blue-300 line-through mr-2">De R$260</span>
+                                    por R$199,00
+                                </span>
                             </div>
                         </div>
 
