@@ -14,7 +14,7 @@ const FloatingWhatsApp = () => {
 
     return (
         <motion.a
-            href={`https://api.whatsapp.com/send?phone=5516992206074&text=${encodeURIComponent("Olá quero informações sobre os cursos disponíveis")}`}
+            href="https://wa.me/5516992206074?text=Ol%C3%A1%20quero%20informações%20sobre%20os%20cursos%20disponíveis"
             target="_blank"
             rel="noopener noreferrer"
             onClick={handleClick}
